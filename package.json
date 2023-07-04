@@ -1,0 +1,59 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "description": "cypress automation",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "intg:staging:direct:personal:bdo:inter": "cypress run --env env=staging,country=PH,type=personal,bank=BDO,dest=inter --spec cypress/e2e/Integration/live/direct_happy.cy.js --headed --no-exit",
+    "intg:staging:direct:personal:bdo:intra": "cypress run --env env=staging,country=PH,type=personal,bank=BDO,dest=intra --spec cypress/e2e/Integration/live/direct_happy.cy.js --headed --no-exit",
+    "intg:staging:direct:personal:rcbc:inter": "cypress run --env env=staging,country=PH,type=personal,bank=RCBC,dest=inter --spec cypress/e2e/Integration/live/direct_happy.cy.js --headed --no-exit",
+    "intg:staging:direct:personal:rcbc:intra": "cypress run --env env=staging,country=PH,type=personal,bank=RCBC,dest=intra --spec cypress/e2e/Integration/live/direct_happy.cy.js --headed --no-exit",
+    "intg:staging:direct:personal:landbank:intra": "cypress run --env env=staging,country=PH,type=personal,bank=Landbank,dest=intra --spec cypress/e2e/Integration/live/direct_happy.cy.js --headed --no-exit",
+    "intg:staging:direct:personal:landbank:inter": "cypress run --env env=staging,country=PH,type=personal,bank=Landbank,dest=inter --spec cypress/e2e/Integration/live/direct_happy.cy.js --headed --no-exit",
+    "intg:staging:direct:personal:billspay:intra": "cypress run --env env=staging,country=PH,type=personal,bank=Billspay,dest=intra --spec cypress/e2e/Integration/live/direct_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:bpi": "cypress run --env env=staging,country=PH,type=personal,bank=BPI --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:pnb": "cypress run --env env=staging,country=PH,type=personal,bank=PNB --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:bdo": "cypress run --env env=staging,country=PH,type=personal,bank=BDO --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:rcbc": "cypress run --env env=staging,country=PH,type=personal,bank=RCBC --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:landbank": "cypress run --env env=staging,country=PH,type=personal,bank=Landbank --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:permata": "cypress run --env env=staging,country=ID,type=personal,bank=Permata --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:danamon": "cypress run --env env=staging,country=ID,type=personal,bank=Danamon --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:bca": "cypress run --env env=staging,country=ID,type=personal,bank=BCA --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:bri": "cypress run --env env=staging,country=ID,type=personal,bank=BRI --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:bni": "cypress run --env env=staging,country=ID,type=personal,bank=BNI --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:mandiri": "cypress run --env env=staging,country=ID,type=personal,bank=Mandiri --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:personal:jago": "cypress run --env env=staging,country=ID,type=personal,bank=Jago --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:corporate:bpi": "cypress run --env env=staging,country=PH,type=corporate,bank=BPI --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:corporate:mandiri": "cypress run --env env=staging,country=ID,type=corporate,bank=Mandiri --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:corporate:bri": "cypress run --env env=staging,country=ID,type=corporate,bank=BRI --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit",
+    "intg:staging:statement:corporate:bni": "cypress run --env env=staging,country=ID,type=corporate,bank=BNI --spec cypress/e2e/Integration/live/statement_happy.cy.js --headed --no-exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitea.brankas.dev/Testing/testing"
+  },
+  "keywords": [],
+  "author": "Brankas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitea.brankas.dev/Testing/testing"
+  },
+  "homepage": "https://gitea.brankas.dev/Testing/testing#readme",
+  "devDependencies": {
+    "cypress": "^10.11.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.0.1",
+    "cypress-ntlm-auth": "^4.0.4",
+    "cypress-otp": "^1.0.3",
+    "cypress-wait-until": "^1.7.2",
+    "faker": "^5.5.3",
+    "gmail-tester": "^1.3.8",
+    "webpack": "^5.72.1"
+  },
+  "dependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress-ntlm-auth": "^4.1.1",
+    "swr": "^1.3.0"
+  }
+}

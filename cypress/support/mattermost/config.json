@@ -1,0 +1,53 @@
+{
+  "account": {
+    "username": "qa@brank.as",
+    "password": "Brankas2022!"
+  },
+  "timeout": 240,
+  "prefetchSeconds": 2,
+  "profiles": {
+    "metrobankDonal": {
+      "sender": "METROBANK-Donal",
+      "device": "Donal-personal (OnePlus LE2110)"
+    },
+    "bdoGab": {
+      "sender": "BDO-ONLINE",
+      "device": "OnePlus ONEPLUS A5010"
+    },
+    "bdoKich": {
+      "sender": "BDO-ONLINE",
+      "device": "OnePlus ONEPLUS A5010"
+    },
+    "bdoClarence": {
+      "sender": "BDO-ONLINE",
+      "device": "OnePlus ONEPLUS A5010"
+    },
+    "rcbcClarence": {
+      "sender": "RCBC-CLARENCE",
+      "device": "OnePlus ONEPLUS A5010"
+    },
+    "rcbcCzar": {
+      "sender": "RCBC-Czar",
+      "device": "realme RMX2061"
+    },
+    "landbankMarian": {
+      "sender": "LandBank - Kaye"
+    },
+    "landbankJorel": {
+      "sender": "LandBank - Jorell",
+      "device": "OPPO CPH1909"
+    },
+    "jagoRitter": {
+      "sender": "Jago-Ritter"
+    },
+    "BPIBillspay": {
+      "sender": "BPI-OTP"
+    },
+    "UBIce": {
+      "sender": "UnionBank - ICE"
+    },
+    "GXI_Jorrel": {
+      "sender": "GCash - Jorell"
+    }
+  }
+}
